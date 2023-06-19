@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: titi
+  sql:
+    init:
+      platform: mysql
+  datasource:
+    url: jdbc:mysql://titi-database.cypyubct4thy.ap-northeast-2.rds.amazonaws.com:3306/titi
+    username: msung99
+    password: msung6924
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy=org:
+          hibernate:
+            boot:
+              model:
+                naming:
+                  PhysicalNamingStrategyStandardImpl:
